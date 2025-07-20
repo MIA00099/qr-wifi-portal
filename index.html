@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WiFi Access – Pay & Connect</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #101820;
+      color: #fff;
+      text-align: center;
+      padding: 40px;
+    }
+    .card {
+      background: #fff;
+      color: #000;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 400px;
+      margin: auto;
+    }
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+    }
+    button {
+      background: #ffcc00;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Welcome to Kigali WiFi</h2>
+    <p>Pay 500 RWF to access high-speed internet for 1 hour</p>
+    <form action="https://api.yourdomain.com/verify" method="POST">
+      <input type="tel" name="phone" placeholder="Enter MTN number" required pattern="07[0-9]{8}" />
+      <button type="submit">Pay with MTN MoMo</button>
+    </form>
+    <p><small>Powered by AgriConnect WiFi</small></p>
+  </div>
+</body>
+</html>
